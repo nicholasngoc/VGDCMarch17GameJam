@@ -14,8 +14,10 @@ public class Eat : MonoBehaviour {
             Destroy(other.gameObject);
             spawner.numPrey--;
             game.numEaten++;
-
-            
+        }
+        if(other.gameObject.tag == "angler")
+        {
+            Destroy(other.gameObject);
         }
     }
 }

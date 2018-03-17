@@ -7,11 +7,8 @@ public class Global : MonoBehaviour {
     public int numEaten = 0;
     public int eatGoal = 15;
     public bool mature = false;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public SpawnPrey spawner;
+    public GameObject angler;
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,6 +16,7 @@ public class Global : MonoBehaviour {
         if(numEaten >= eatGoal)
         {
             mature = true;
+            spawner.spawnPrey(angler);
         }
 
 	}

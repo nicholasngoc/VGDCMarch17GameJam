@@ -7,7 +7,6 @@ public class SpawnPrey : MonoBehaviour {
     public int spawnCount;
     public int numPrey;
     public GameObject prey;
-    public GameObject angler;
     public GameObject environment;
     public float respawnRate;
 
@@ -33,7 +32,7 @@ public class SpawnPrey : MonoBehaviour {
         }
 	}
 
-    void spawnPrey(GameObject spawnObject)
+    public void spawnPrey(GameObject spawnObject)
     {
         Vector3 ranPosition = new Vector3(Random.Range(environment.transform.position.x - environment.transform.lossyScale.x / 2, environment.transform.position.x + environment.transform.lossyScale.x / 2),
             Random.Range(environment.transform.position.y - environment.transform.lossyScale.y / 2, environment.transform.position.y + environment.transform.lossyScale.y / 2),
