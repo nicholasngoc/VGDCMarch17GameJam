@@ -5,6 +5,7 @@ using UnityEngine;
 public class Eat : MonoBehaviour {
 
     public SpawnPrey spawner;
+    public Global game;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +13,9 @@ public class Eat : MonoBehaviour {
         {
             Destroy(other.gameObject);
             spawner.numPrey--;
+            game.numEaten++;
+
+            
         }
     }
 }
