@@ -6,7 +6,8 @@ public class SpawnPrey : MonoBehaviour {
 
     public int spawnCount;
     public int numPrey;
-    public GameObject[] prey;
+    public GameObject prey;
+    public GameObject angler;
     public GameObject environment;
     public float respawnRate;
 
@@ -22,7 +23,7 @@ public class SpawnPrey : MonoBehaviour {
         
         if(currentTime > respawnRate && numPrey < spawnCount)
         {
-            spawnPrey();
+            spawnPrey(prey);
             numPrey++;
             currentTime = 0f;
         }
@@ -32,7 +33,7 @@ public class SpawnPrey : MonoBehaviour {
         }
 	}
 
-    void spawnPrey()
+    void spawnPrey(GameObject spawnObject)
     {
         Vector3 ranPosition = new Vector3(Random.Range(environment.transform.position.x - environment.transform.lossyScale.x / 2, environment.transform.position.x + environment.transform.lossyScale.x / 2),
             Random.Range(environment.transform.position.y - environment.transform.lossyScale.y / 2, environment.transform.position.y + environment.transform.lossyScale.y / 2),
@@ -41,8 +42,6 @@ public class SpawnPrey : MonoBehaviour {
 
         Quaternion ranRotation = Random.rotation;
 
-        int ranPrey = Random.Range(0, prey.Length - 1);
-
-        Instantiate(prey[ranPrey], ranPosition, ranRotation);
+        Instantiate(spawnObject, ranPosition, ranRotation);
     }
 }
