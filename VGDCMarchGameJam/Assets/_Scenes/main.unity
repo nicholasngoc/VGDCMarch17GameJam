@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 1113450688}
   - component: {fileID: 1113450687}
   - component: {fileID: 1113450686}
+  - component: {fileID: 1113450689}
   m_Layer: 0
   m_Name: TopFloor
   m_TagString: Untagged
@@ -423,6 +424,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113450684}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1113450689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113450684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: T
+  margin: 5
 --- !u!1 &1335856268
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +448,7 @@ GameObject:
   - component: {fileID: 1335856272}
   - component: {fileID: 1335856271}
   - component: {fileID: 1335856270}
+  - component: {fileID: 1335856273}
   m_Layer: 0
   m_Name: WestWall
   m_TagString: Untagged
@@ -509,6 +524,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1335856268}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1335856273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335856268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: W
+  margin: 5
 --- !u!1 &1389123469
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477684308}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -11.19}
+  m_LocalPosition: {x: -0.9, y: 13.3, z: 14.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1389123473}
@@ -743,6 +771,7 @@ GameObject:
   - component: {fileID: 1682722978}
   - component: {fileID: 1682722977}
   - component: {fileID: 1682722976}
+  - component: {fileID: 1682722979}
   m_Layer: 0
   m_Name: BottomFloor
   m_TagString: Untagged
@@ -818,6 +847,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1682722974}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1682722979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682722974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: B
+  margin: 5
 --- !u!1 &1684455592
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +1001,7 @@ GameObject:
   - component: {fileID: 1695049730}
   - component: {fileID: 1695049729}
   - component: {fileID: 1695049728}
+  - component: {fileID: 1695049731}
   m_Layer: 0
   m_Name: EastWall
   m_TagString: Untagged
@@ -1034,6 +1077,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695049726}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1695049731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695049726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: E
+  margin: 5
 --- !u!1 &1897263614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1101,7 @@ GameObject:
   - component: {fileID: 1897263618}
   - component: {fileID: 1897263617}
   - component: {fileID: 1897263616}
+  - component: {fileID: 1897263619}
   m_Layer: 0
   m_Name: NorthWall
   m_TagString: Untagged
@@ -1120,6 +1177,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1897263614}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1897263619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897263614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: N
+  margin: 5
 --- !u!1 &1962476352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1201,7 @@ GameObject:
   - component: {fileID: 1962476356}
   - component: {fileID: 1962476355}
   - component: {fileID: 1962476354}
+  - component: {fileID: 1962476357}
   m_Layer: 0
   m_Name: SouthWall
   m_TagString: Untagged
@@ -1206,6 +1277,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1962476352}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1962476357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962476352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660e9f32322a6a4448cd786ae7f31fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: S
+  margin: 5
 --- !u!1 &1994972382
 GameObject:
   m_ObjectHideFlags: 0
