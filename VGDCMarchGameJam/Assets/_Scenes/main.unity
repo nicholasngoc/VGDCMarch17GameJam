@@ -252,6 +252,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1484466588642992, guid: 642c12ee56780ba48b6777a431ce81c8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 642c12ee56780ba48b6777a431ce81c8, type: 2}
   m_IsPrefabParent: 0
@@ -611,6 +615,7 @@ GameObject:
   - component: {fileID: 1477684310}
   - component: {fileID: 1477684309}
   - component: {fileID: 1477684314}
+  - component: {fileID: 1477684315}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -715,6 +720,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 100
   movementSpeed: 3
+--- !u!114 &1477684315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1477684308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f247a466ddbd0f04d90fe156679f0e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 815193845}
 --- !u!1 &1682722974
 GameObject:
   m_ObjectHideFlags: 0
