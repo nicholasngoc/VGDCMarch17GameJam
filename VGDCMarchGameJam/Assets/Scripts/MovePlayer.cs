@@ -17,7 +17,7 @@ public class MovePlayer : MonoBehaviour {
     }
 
     void Update () {
-		transform.Rotate(new Vector3(-Input.GetAxis("Mouse Y"), 0, -Input.GetAxis("Mouse X")) * Time.deltaTime * rotateSpeed);
+		transform.Rotate(new Vector3(0,Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * Time.deltaTime * rotateSpeed);
         //transform.Rotate(new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotateSpeed);
     }
 
@@ -27,15 +27,15 @@ public class MovePlayer : MonoBehaviour {
         vertical = Input.GetAxis("Vertical");
         if (Input.GetKey("w"))
         {
-            rb.velocity = transform.up * (vertical * movementSpeed);
+            rb.velocity = transform.right * (vertical * movementSpeed);
         }
         if (Input.GetKey("a"))
         {
-            rb.velocity = transform.right * (horizontal * movementSpeed);
+            rb.velocity = transform.forward * (-horizontal * movementSpeed);
         }
         if (Input.GetKey("d"))
         {
-            rb.velocity = transform.right * (horizontal * movementSpeed);
+            rb.velocity = transform.forward * (-horizontal * movementSpeed);
         }
     }
 }
