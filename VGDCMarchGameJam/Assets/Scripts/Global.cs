@@ -9,6 +9,9 @@ public class Global : MonoBehaviour {
     public bool mature = false;
     public SpawnPrey spawner;
     public GameObject angler;
+    public int maxSpawn;
+
+    int spawnCount;
 	
 	// Update is called once per frame
 	void Update () {
@@ -16,7 +19,10 @@ public class Global : MonoBehaviour {
         if(numEaten >= eatGoal)
         {
             mature = true;
-            spawner.spawnPrey(angler);
+            if (spawnCount < maxSpawn)
+            {
+                spawner.spawnPrey(angler);
+            }
         }
 
 	}
