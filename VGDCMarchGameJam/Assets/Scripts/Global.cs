@@ -22,6 +22,7 @@ public class Global : MonoBehaviour {
             if (spawnCount < maxSpawn)
             {
                 spawner.spawnPrey(angler);
+                spawnCount++;
             }
         }
 

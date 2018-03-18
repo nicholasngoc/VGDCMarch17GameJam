@@ -795,12 +795,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e5dad1f5e124b4c8d35ee8390ff1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numEaten: 0
+  numEaten: 14
   eatGoal: 15
   mature: 0
   spawner: {fileID: 815193845}
   angler: {fileID: 1767297260491334, guid: 2da54e190d43b6c458a9434bf67cc04b, type: 2}
-  maxSpawn: 50
+  maxSpawn: 100
 --- !u!1 &1113450684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,8 +1517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1, y: 64.7}
-  m_SizeDelta: {x: 475.9, y: 157.3}
+  m_AnchoredPosition: {x: 11.1, y: 14.6}
+  m_SizeDelta: {x: 496, y: 257.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023067551
 MonoBehaviour:
@@ -1541,7 +1541,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
